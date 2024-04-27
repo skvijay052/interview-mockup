@@ -41,6 +41,13 @@
     }
     .title-text, .title-text-sm{  
         margin-bottom: 5px;
+        font-size: 13px;
+    }
+    h6 {
+        font-size: 13px; 
+    }
+    .tabs-nav li a { 
+        font-weight: 500; 
     }
     .card-row-1 {
         width: 100%; 
@@ -68,6 +75,9 @@
     .list-item-card { 
         width: 100%;
         padding: 10px; 
+    } 
+    .card-box, .card-box-2, .card-box-3 {
+        padding: 20px;
     }
 }
 
@@ -185,6 +195,9 @@
     .card-two-box-wrap .card-wrap-box:last-child { 
         border-right: none;    
     }
+    .card-box-2 { 
+        border-radius: 0px 10px 10px 0px;
+    } 
 }
 
 
@@ -238,4 +251,7 @@
     .card-two-box-wrap .card-wrap-box:last-child { 
         border-right: none;    
     }
+    .card-box-2 { 
+        border-radius: 0px 10px 10px 0px;
+    } 
 }

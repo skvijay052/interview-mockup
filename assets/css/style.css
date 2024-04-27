@@ -424,12 +424,13 @@ label {
 }
 
 .form-control {
-    border: 1px solid #f1f2f3;
     padding: 15px;
     font-size: 14px;
     border-radius: 5px;
     transition: 0.5s all;
     color: #bababa;
+    background-color: white;
+    border: 1px solid #f1f2f3;
 }
 
 :is(.form-control):is(:focus, :focus-visible, :hover) {
@@ -502,7 +503,7 @@ ul.tabs-nav li.active a {
 }
 .card-box-2 {
     background: #f8ebeb; 
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px;
 } 
 .card-box-3 { 
     padding-block: 40px;

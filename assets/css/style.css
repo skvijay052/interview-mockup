@@ -11,6 +11,8 @@
     --id-grey1: #98a4b0;
     --id-grey2: #82868f;
     --id-black: #20242f;
+    --succes-color: #2ecc71;;
+    --error-color: #e74c3c;
 }
 
 * {
@@ -437,6 +439,24 @@ label {
     border: 1px solid #dedfe1;
     outline: none;
 }
+ 
+.form-group.success .form-control {
+    border-color: var(--succes-color);
+}
+
+.form-group.error .form-control {
+    border-color: var(--error-color);    
+}
+
+.form-group small{
+    color: var(--error-color); 
+    visibility: hidden;
+}
+
+.form-group.error small{
+    visibility: visible;
+    font-size: 12px;
+}
 
 /* ----- select ----- */
 select {
@@ -581,4 +601,7 @@ ul.tabs-nav li.active a {
 
 .list-item-banner .text-grey2 {
     color: var(--id-grey2);
+}
+.banner-overlap-section-x {
+    padding-bottom: 110px;
 }

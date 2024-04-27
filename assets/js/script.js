@@ -25,3 +25,75 @@ $(window).resize(function () {
         $('nav ul').removeAttr('style');
     }
 });
+
+
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const name = document.getElementById('name');
+const number = document.getElementById('number');
+const operation = document.getElementById('operation');
+const Browser = document.getElementById('Browser');
+const Program = document.getElementById('Program');
+const message = document.getElementById('message');
+ 
+function showError(input, message) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-group error';
+    const small = formControl.querySelector('small');
+    small.innerText = message;
+}
+ 
+function showSucces(input) {
+    const formControl = input.parentElement;
+    formControl.className = 'form-group success';
+}
+ 
+function checkEmail(input) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(re.test(input.value.trim())) {
+        showSucces(input)
+    }else {
+        showError(input,'Email is not invalid');
+    }
+}
+ 
+function checkRequired(inputArr) {
+    inputArr.forEach(function(input){
+        if(input.value.trim() === ''){
+            showError(input,`${getFieldName(input)} is required`)
+        }else {
+            showSucces(input);
+        }
+    });
+}
+function checkNumber(input) {
+    const numberRegex = /^[0-9]+$/;
+    if (numberRegex.test(input.value.trim())) {
+        showSuccess(input);
+    } else {
+        showError(input, 'Only numbers are allowed');
+    }
+}
+function checkLength(input, min ,max) {
+    if(input.value.length < min) {
+        showError(input, `${getFieldName(input)} must be at least ${min} characters`);
+    }else if(input.value.length > max) {
+        showError(input, `${getFieldName(input)} must be less than ${max} characters`);
+    }else {
+        showSucces(input);
+    }
+}
+ 
+function getFieldName(input) {
+    return input.id.charAt(0).toUpperCase() + input.id.slice(1);
+}
+  
+form.addEventListener('submit',function(e) {
+    e.preventDefault();
+
+    checkRequired([email, name, number, operation, Browser, Program, message]);
+    checkLength(name,3,15); 
+    checkLength(number,3,12); 
+    checkEmail(email); 
+    checkNumber(number); 
+});

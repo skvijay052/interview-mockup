@@ -80,6 +80,9 @@
         padding: 20px;
     }
     .section-pt-30 {padding-top: 0;}
+    .section-pb-80 {
+        padding-bottom: 40px;
+    } 
 }
 
 
@@ -118,6 +121,9 @@
         padding-right: 0px;
         margin-bottom: 10px;
     }
+    .section-pb-80 {
+        padding-bottom: 40px;
+    } 
 }
 
 

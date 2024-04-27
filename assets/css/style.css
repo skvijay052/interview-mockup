@@ -11,7 +11,8 @@
     --id-grey1: #98a4b0;
     --id-grey2: #82868f;
     --id-black: #20242f;
-    --succes-color: #2ecc71;;
+    --succes-color: #2ecc71;
+    ;
     --error-color: #e74c3c;
 }
 
@@ -116,7 +117,8 @@ h6 {
 
 p {
     font-size: 20px;
-} 
+}
+
 /* ------- colour ------- */
 .text-white {
     color: var(--id-white);
@@ -137,6 +139,7 @@ p {
 .text-blue3 {
     color: var(--id-blue3);
 }
+
 .text-black {
     color: var(--id-black);
 }
@@ -188,15 +191,25 @@ a {
     text-decoration: none;
 }
 
+.d-none {
+    display: none;
+}
+.d-flex {
+    display: flex;
+}
+.d-block {
+    display: block;
+}
+
 .list-style-none {
     list-style: none;
 }
- 
+
 .container {
     width: 100%;
     margin: 0 auto;
 }
- 
+
 header {
     position: sticky;
     top: 0;
@@ -439,21 +452,21 @@ label {
     border: 1px solid #dedfe1;
     outline: none;
 }
- 
+
 .form-group.success .form-control {
     border-color: var(--succes-color);
 }
 
 .form-group.error .form-control {
-    border-color: var(--error-color);    
+    border-color: var(--error-color);
 }
 
-.form-group small{
-    color: var(--error-color); 
+.form-group small {
+    color: var(--error-color);
     visibility: hidden;
 }
 
-.form-group.error small{
+.form-group.error small {
     visibility: visible;
     font-size: 12px;
 }
@@ -479,7 +492,7 @@ select {
 
 
 /* ---------- tabs ------- */
- 
+
 ul.tabs-nav {
     list-style: none;
     margin: 0;
@@ -488,27 +501,32 @@ ul.tabs-nav {
     display: flex;
     white-space: pre;
 }
-ul.tabs-nav li { 
+
+ul.tabs-nav li {
     padding: 10px 30px;
     cursor: pointer;
     border-radius: 5px 5px 0px 0px;
     border-bottom: 4px solid transparent;
     transition: 0.5s all;
-} 
+}
+
 ul.tabs-nav li:hover,
 ul.tabs-nav li.active {
     background-color: #fff;
     border-bottom: 4px solid #1782d9;
-} 
+}
+
 ul.tabs-nav li:hover a,
 ul.tabs-nav li.active a {
     color: #1782d9;
-} 
+}
+
 .tabs-nav li a {
     font-size: 14px;
     font-weight: 200;
     color: #b6bec7;
-}  
+}
+
 .tab-content {
     margin-top: 40px;
 }
@@ -516,59 +534,75 @@ ul.tabs-nav li.active a {
 /* -----banner card------- */
 .banner-overlap-section-y .card-wrapper {
     box-shadow: 0 0 3px 1px #0000001c;
-    border-radius: 15px;  
-} 
-.card-box, .card-box-2, .card-box-3 { 
+    border-radius: 15px;
+}
+
+.card-box,
+.card-box-2,
+.card-box-3 {
     padding: 25px;
 }
+
 .card-box-2 {
-    background: #f8ebeb; 
+    background: #f8ebeb;
     border-radius: 0px;
-} 
-.card-box-3 { 
+}
+
+.card-box-3 {
     padding-block: 40px;
 }
+
 .card-three-box {
     display: flex;
     flex-wrap: wrap;
 }
-.card-wrap-box { 
+
+.card-wrap-box {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     max-width: 100%;
     border-right: 1px dashed #c9c1c1;
     margin-right: 30px;
-    padding-right: 30px;    
-} 
-.card-wrap-box:last-child{  
+    padding-right: 30px;
+}
+
+.card-wrap-box:last-child {
     border-right: none;
     margin-right: 0px;
-    padding-right: 0px;    
+    padding-right: 0px;
 }
-.title-text, .title-text-sm {
+
+.title-text,
+.title-text-sm {
     font-size: 14px;
     font-weight: 100;
     margin-bottom: 15px;
 }
+
 .title-text-sm {
-    font-size: 10px; 
+    font-size: 10px;
     margin-bottom: 0;
 }
+
 .sub-title {
     font-size: 16px;
     color: #de7d77;
 }
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
 }
-.card-row-2 { 
+
+.card-row-2 {
     position: relative;
 }
+
 .card-row-2 img {
     width: 100%;
-    position: absolute; 
+    position: absolute;
 }
+
 .card-two-box {
     display: flex;
     align-items: center;
@@ -576,18 +610,21 @@ ul.tabs-nav li.active a {
     margin-top: 30px;
     width: 100%;
 }
-.card-two-box .card-wrap-box:last-child{
+
+.card-two-box .card-wrap-box:last-child {
     margin-right: 0px;
     padding-right: 0px;
 }
+
 .card-two-box-wrap {
     display: flex;
     flex-wrap: wrap;
 }
+
 .card-two-box-wrap .card-wrap-box {
     max-width: 100%;
     width: 100%;
-    border-right: none; 
+    border-right: none;
 }
 
 .list-item-banner li {
@@ -595,10 +632,33 @@ ul.tabs-nav li.active a {
     font-size: 13px;
     margin-bottom: 5px;
 }
+
 .list-item-banner {
     margin-top: 15px;
 }
 
 .list-item-banner .text-grey2 {
     color: var(--id-grey2);
+}
+
+.success-message-wrapper {
+    background: #101c2fbf;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    padding: 5rem;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    position: fixed;
+    z-index: 999;
+    color: #ffffff;
+}
+.success-message-wrapper h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
 }

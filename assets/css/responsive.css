@@ -1,7 +1,8 @@
     @media (max-width: 1309px) {
         .menu-icon {
-            display: block; 
+            display: block;
         }
+
         .nav-list-item {
             width: 100%;
             margin: 0;
@@ -12,259 +13,320 @@
             border-bottom: 1px solid var(--id-blue1);
             display: none;
         }
+
         .nav-list-item li {
             text-align: center;
-            display: block; 
+            display: block;
             border-top: 1px solid var(--id-blue1);
             float: none;
             padding-block: 10px;
             font-size: 16px;
         }
     }
-    
-    
-    
-    @media (max-width: 575.98px) { 
+
+
+
+    @media (max-width: 575.98px) {
         .footer-grid-container {
-            grid: auto-flow / 1fr 1fr; 
-        } 
-        .grid-form-wrapper { 
+            grid: auto-flow / 1fr 1fr;
+        }
+
+        .grid-form-wrapper {
             grid: auto-flow / 1fr;
             grid-row-gap: 0px;
             grid-column-gap: 10px;
         }
-        .card-wrap-box{  
-            border-right: none; 
+
+        .card-wrap-box {
+            border-right: none;
             margin-bottom: 15px;
-            margin-right: 15px;
-            padding-right: 15px; 
-        }
-        .title-text, .title-text-sm{  
-            margin-bottom: 5px;
-            font-size: 13px;
-        }
-        h6 {
-            font-size: 13px; 
-        }
-        .tabs-nav li a { 
-            font-weight: 500; 
-        }
-        .card-row-1 {
-            width: 100%; 
-            order: 1;
-        }
-        .card-row-2 {
-            width: 100%; 
-            text-align: center;
-        }
-        .card-row-2 img {  
-            top: 0px;
-            position: relative;
-            width: 250px;
-            margin-top: -180px;
-        }
-        .card-two-box .card-wrap-box {
-            max-width: 100%; 
-            margin-right: 0px;
-            padding-right: 0px;
-            margin-bottom: 10px;
-        }
-        .card-two-box { 
-            margin-top: 15px; 
-        } 
-        .list-item-card { 
-            width: 100%;
-            padding: 10px; 
-        } 
-        .card-box, .card-box-2, .card-box-3 {
-            padding: 20px;
-        }
-        .section-pt-30 {padding-top: 0;}
-        .section-pb-80 {
-            padding-bottom: 40px;
-        }  
-        .banner-overlap-section-x {
-            padding-bottom: 110px;
-        }
-    }
-
-
-    @media (min-width: 576px) and (max-width: 767.98px) { 
-        .footer-grid-container {
-            grid: auto-flow / 1fr 1fr 1fr;  
-        } 
-        .grid-form-wrapper {  
-            grid-row-gap: 0px;
-            grid-column-gap: 10px;
-        }
-        .card-wrap-box {  
-            max-width: 50%;
-        }
-        .card-wrap-box{  
-            border-right: none; 
-            margin-bottom: 15px;  
-        }
-        .card-row-1 {
-            width: 100%; 
-            order: 1;
-        }
-        .card-row-2 {
-            width: 100%; 
-            text-align: center;
-        }
-        .card-row-2 img {  
-            top: 0px;
-            position: relative;
-            width: 250px;
-            margin-top: -180px;
-        }
-        .card-two-box .card-wrap-box {
-            max-width: 100%; 
-            margin-right: 0px;
-            padding-right: 0px;
-            margin-bottom: 10px;
-        }
-        .section-pb-80 {
-            padding-bottom: 40px;
-        } 
-        .banner-overlap-section-x {
-            padding-bottom: 110px;
-        }
-    }
-
-
-    @media (min-width: 768px) and (max-width: 991.98px) { 
-        .footer-grid-container {
-            grid: auto-flow / 1fr 1fr 1fr;  
-        } 
-        .two-grid-container { 
-            grid: auto-flow / 1fr 1fr;
-            grid-column-gap: 20px;
-        }
-        .card-wrap-box {  
-            max-width: 33.333%;
-        }
-        .card-row-1 {
-            width: 60%; 
-        }
-        .card-row-2 {
-            width: 40%; 
-        }
-        .card-row-2 img {  
-            top: -125px;
-            width: 300px;
-        }
-        .card-two-box .card-wrap-box {
-            max-width: 100%; 
-            margin-right: 0px;
-            padding-right: 0px;
-            margin-bottom: 10px;
-        }
-        .banner-overlap-section-x {
-            padding-bottom: 15rem;
-        }
-        .banner-overlap-section-y .card-wrapper {
-            background-color: white; 
-            margin-top: -15rem; 
-        }
-    }
-
-
-    @media (min-width: 992px) and (max-width: 1199.98px) {   
-        .two-grid-container { 
-            grid: auto-flow / 1fr 1fr;
-            grid-column-gap: 20px;
-        }
-        .banner-overlap-section-x {
-            padding-bottom: 15rem;
-        }
-        .banner-overlap-section-y .card-wrapper {
-            background-color: white; 
-            margin-top: -15rem; 
-        }
-        .card-wrap-box {  
-            max-width: 33.333%;
-        }
-        .card-row-1 {
-            width: 70%; 
-        }
-        .card-row-2 {
-            width: 30%; 
-        }
-        .card-row-2 img {  
-            top: -125px;
-            width: 290px;
-        }
-        .card-two-box .card-wrap-box {
-            max-width: 50%; 
             margin-right: 15px;
             padding-right: 15px;
         }
-        .card-two-box-wrap .card-wrap-box {
-            max-width: 50%;
-            width: 45%;
-            border-right: 1px dashed #c9c1c1; 
+
+        .title-text,
+        .title-text-sm {
+            margin-bottom: 5px;
+            font-size: 13px;
         }
-        .card-two-box-wrap .card-wrap-box:last-child { 
-            border-right: none;    
+
+        h6 {
+            font-size: 13px;
         }
-        .card-box-2 { 
-            border-radius: 0px 10px 10px 0px;
-        } 
+
+        .tabs-nav li a {
+            font-weight: 500;
+        }
+
+        .card-row-1 {
+            width: 100%;
+            order: 1;
+        }
+
+        .card-row-2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .card-row-2 img {
+            top: 0px;
+            position: relative;
+            width: 250px;
+            margin-top: -180px;
+        }
+
+        .card-two-box .card-wrap-box {
+            max-width: 100%;
+            margin-right: 0px;
+            padding-right: 0px;
+            margin-bottom: 10px;
+        }
+
+        .card-two-box {
+            margin-top: 15px;
+        }
+
+        .list-item-card {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .card-box,
+        .card-box-2,
+        .card-box-3 {
+            padding: 20px;
+        }
+
+        .section-pt-30 {
+            padding-top: 0;
+        }
+
+        .section-pb-80 {
+            padding-bottom: 40px;
+        }
+
+        .banner-overlap-section-x {
+            padding-bottom: 110px;
+        }
     }
 
 
-    @media (min-width: 1200px) { 
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        .footer-grid-container {
+            grid: auto-flow / 1fr 1fr 1fr;
+        }
+
+        .grid-form-wrapper {
+            grid-row-gap: 0px;
+            grid-column-gap: 10px;
+        }
+
+        .card-wrap-box {
+            max-width: 50%;
+        }
+
+        .card-wrap-box {
+            border-right: none;
+            margin-bottom: 15px;
+        }
+
+        .card-row-1 {
+            width: 100%;
+            order: 1;
+        }
+
+        .card-row-2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .card-row-2 img {
+            top: 0px;
+            position: relative;
+            width: 250px;
+            margin-top: -180px;
+        }
+
+        .card-two-box .card-wrap-box {
+            max-width: 100%;
+            margin-right: 0px;
+            padding-right: 0px;
+            margin-bottom: 10px;
+        }
+
+        .section-pb-80 {
+            padding-bottom: 40px;
+        }
+
+        .banner-overlap-section-x {
+            padding-bottom: 110px;
+        }
+    }
+
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .footer-grid-container {
+            grid: auto-flow / 1fr 1fr 1fr;
+        }
+
+        .two-grid-container {
+            grid: auto-flow / 1fr 1fr;
+            grid-column-gap: 20px;
+        }
+
+        .card-wrap-box {
+            max-width: 33.333%;
+        }
+
+        .card-row-1 {
+            width: 60%;
+        }
+
+        .card-row-2 {
+            width: 40%;
+        }
+
+        .card-row-2 img {
+            top: -125px;
+            width: 300px;
+        }
+
+        .card-two-box .card-wrap-box {
+            max-width: 100%;
+            margin-right: 0px;
+            padding-right: 0px;
+            margin-bottom: 10px;
+        }
+
+        .banner-overlap-section-x {
+            padding-bottom: 15rem;
+        }
+
+        .banner-overlap-section-y .card-wrapper {
+            background-color: white;
+            margin-top: -15rem;
+        }
+    }
+
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        .two-grid-container {
+            grid: auto-flow / 1fr 1fr;
+            grid-column-gap: 20px;
+        }
+
+        .banner-overlap-section-x {
+            padding-bottom: 15rem;
+        }
+
+        .banner-overlap-section-y .card-wrapper {
+            background-color: white;
+            margin-top: -15rem;
+        }
+
+        .card-wrap-box {
+            max-width: 33.333%;
+        }
+
+        .card-row-1 {
+            width: 70%;
+        }
+
+        .card-row-2 {
+            width: 30%;
+        }
+
+        .card-row-2 img {
+            top: -125px;
+            width: 290px;
+        }
+
+        .card-two-box .card-wrap-box {
+            max-width: 50%;
+            margin-right: 15px;
+            padding-right: 15px;
+        }
+
+        .card-two-box-wrap .card-wrap-box {
+            max-width: 50%;
+            width: 45%;
+            border-right: 1px dashed #c9c1c1;
+        }
+
+        .card-two-box-wrap .card-wrap-box:last-child {
+            border-right: none;
+        }
+
+        .card-box-2 {
+            border-radius: 0px 10px 10px 0px;
+        }
+    }
+
+
+    @media (min-width: 1200px) {
         .container {
             max-width: 1300px;
             margin: 0 auto;
-        }  
+        }
+
         .lg-container {
-            max-width: 970px; 
-        }   
+            max-width: 970px;
+        }
+
         .header-container {
             display: flex;
             align-items: center;
             justify-content: space-between;
-        }  
-        .two-grid-container { 
+        }
+
+        .two-grid-container {
             grid: auto-flow / 1fr 1fr;
             grid-column-gap: 20px;
         }
+
         .banner-overlap-section-x {
             padding-bottom: 15rem;
         }
+
         .banner-overlap-section-y .card-wrapper {
-            background-color: white; 
-            margin-top: -17rem; 
+            background-color: white;
+            margin-top: -17rem;
         }
-        .card-wrap-box {  
+
+        .card-wrap-box {
             max-width: 33.333%;
-        }  
+        }
+
         .card-row-1 {
-            width: 60%; 
+            width: 60%;
         }
+
         .card-row-2 {
-            width: 40%; 
+            width: 40%;
         }
-        .card-row-2 img {  
+
+        .card-row-2 img {
             top: -130px;
             width: 385px;
         }
+
         .card-two-box .card-wrap-box {
-            max-width: 50%; 
+            max-width: 50%;
             margin-right: 15px;
             padding-right: 15px;
         }
+
         .card-two-box-wrap .card-wrap-box {
             max-width: 50%;
             width: 45%;
-            border-right: 1px dashed #c9c1c1;    
+            border-right: 1px dashed #c9c1c1;
         }
-        .card-two-box-wrap .card-wrap-box:last-child { 
-            border-right: none;    
+
+        .card-two-box-wrap .card-wrap-box:last-child {
+            border-right: none;
         }
-        .card-box-2 { 
+
+        .card-box-2 {
             border-radius: 0px 10px 10px 0px;
-        } 
+        }
     }

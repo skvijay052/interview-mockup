@@ -30,7 +30,7 @@
     } 
     .grid-form-wrapper { 
         grid: auto-flow / 1fr;
-        grid-row-gap: 20px;
+        grid-row-gap: 0px;
         grid-column-gap: 10px;
     }
     .card-wrap-box{  
@@ -88,7 +88,7 @@
         grid: auto-flow / 1fr 1fr 1fr;  
     } 
     .grid-form-wrapper {  
-        grid-row-gap: 20px;
+        grid-row-gap: 0px;
         grid-column-gap: 10px;
     }
     .card-wrap-box {  

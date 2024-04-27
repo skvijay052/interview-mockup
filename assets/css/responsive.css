@@ -64,6 +64,10 @@
     }
     .card-two-box { 
         margin-top: 15px; 
+    } 
+    .list-item-card { 
+        width: 100%;
+        padding: 10px; 
     }
 }
 
